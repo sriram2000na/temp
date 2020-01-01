@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'comic-sans';
+  color: #707070;
+}
+/* html {
+  overflow-y: hidden;
+} */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  height: 100%;
+  width: 100%;
+  transform: translateX(25%);
+  display: inline-block;
+}
+#main-content {
+  height: 90vh;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 768px;
+}
+#main-nav .logo {
+  font-family: 'Montserrat', 'comic-sans';
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+#main-nav {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+
+  align-items: center;
+}
+#main-nav ul {
+  display: flex;
+  z-index: 1;
+  background: #fff;
+}
+#main-nav ul li {
+  padding: 0.75rem;
+  font-size: 1.05rem;
+}
+#main-nav ul li a {
+  padding: 0.55rem;
+}
+
+#main-nav ul li a.attract {
+  border: 3px solid rgb(161, 161, 211);
+  border-radius: 50px;
+}
+#main-content {
+  padding-top: 3rem;
+}
+#main-content .container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+#main-content .container .right-side img {
+  padding-top: 1rem;
+  justify-self: flex-end;
+  transform: scale(1.5);
+}
+#main-content .container .left-side {
+  /* width:calc(10%); */
+  transform: translateX(-50%);
+}
+#main-content .container .left-side p {
+  font-family: 'Roboto';
+  line-height: 1.05;
+  padding: 5.5rem 0 1.15rem 0;
+  text-align: left;
+  font-size: 2.25rem;
+  justify-self: flex-start;
+}
+#main-content .container .left-side p span {
+  color: #258ca5;
+}
+#main-content .container .left-side a {
+  color: #fff;
+  background: #1d1c1c;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+#main-content .container .left-side .arrow {
+  border-right: 3px solid black;
+  height: 100px;
+  width: 3px;
+  margin: 1.5rem;
+  margin-left: 5rem;
+  margin-top: 3.2rem;
+  transform: translateX(1px);
+  color: #000;
+  position: relative;
+  animation: anim 3s infinite ease 0.5s;
+}
+#main-content .container .left-side .arrow:before {
+  content: '';
+  border-left: 3px solid black;
+  transform: translate(-11px, -91%) rotate(-45deg);
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  top: 100px;
+  width: 3px;
+}
+#main-content .container .left-side .arrow:after {
+  content: '';
+  border-left: 3px solid black;
+  transform: translate(10px, 40px) rotate(45deg);
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  width: 3px;
+}
+@keyframes anim {
+  from {
+    top: 0px;
+    opacity: 1;
+  }
+  to {
+    top: 100px;
+    opacity: 0;
+  }
+}
+#main-content .container .left-side a:hover {
+  background: #258ca5;
+  color: #1d1c1c;
+}
